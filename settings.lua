@@ -1,0 +1,42 @@
+data:extend {
+    {
+        type = "double-setting",
+        name = "rcc-multiplicative",
+        setting_type = "runtime-global",
+        default_value = 1.0,
+        minimum_value = 0.0,
+        order = "a-1",
+    },
+    {
+        type = "double-setting",
+        name = "rcc-additive",
+        setting_type = "runtime-global",
+        default_value = 0.0,
+        order = "a-2",
+    },
+    {
+        type = "double-setting",
+        name = "rcc-maximum",
+        setting_type = "runtime-global",
+        default_value = 1000.0,
+        minimum_value = 0.001,
+        maximum_value = 1000.0,
+        order = "b-1",
+    },
+    {
+        type = "double-setting",
+        name = "rcc-minimum",
+        setting_type = "runtime-global",
+        default_value = 0.001,
+        minimum_value = 0.001,
+        maximum_value = 1000.0,
+        order = "b-2",
+    },
+    {
+        type = "bool-setting",
+        name = "rcc-print",
+        setting_type = "runtime-global",
+        default_value = true,
+        order = "c",
+    },
+}
