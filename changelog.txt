@@ -5,7 +5,7 @@ Date: 2025-05-16
     - Printing now includes the full calculation.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 2024-12-19
+Date: 2025-05-16
   Info:
     - Initial release.
   Locale:
