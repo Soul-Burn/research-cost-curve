@@ -3,7 +3,7 @@ data:extend {
         type = "double-setting",
         name = "rcc-multiplicative",
         setting_type = "runtime-global",
-        default_value = 1.0,
+        default_value = 1.58,
         minimum_value = 0.0,
         order = "a-1",
     },
