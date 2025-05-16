@@ -1,9 +1,11 @@
 local function apply_change(iterate)
     local old = game.difficulty_settings.technology_price_multiplier
     local new = old
+    local mult = settings.global["rcc-multiplicative"].value
+    local add = settings.global["rcc-additive"].value
     if iterate then
-        new = new * settings.global["rcc-multiplicative"].value
-        new = new + settings.global["rcc-additive"].value
+        new = new * mult
+        new = new + add
     end
     local max = settings.global["rcc-maximum"].value
     local min = settings.global["rcc-minimum"].value
@@ -17,7 +19,7 @@ local function apply_change(iterate)
         if new == min then
             suffix = " = minimum"
         end
-        game.print("Research price multiplier updated to: " .. new .. "x" .. suffix)
+        game.print("Research price multiplier updated: (" .. old .. " + " .. add .. ") * " .. mult .. " =  " .. new .. "x" .. suffix)
     end
 end
 

@@ -2,6 +2,7 @@ Version: 0.1.1
 Date: 2025-05-16
   Changes:
     - Added default values: 1.58 multiplier, reaches 1000x in 15 researches.
+    - Printing now includes the full calculation.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2024-12-19
