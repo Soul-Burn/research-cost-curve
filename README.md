@@ -9,3 +9,4 @@ Updates the research cost multiplier every time a non-trigger research finishes.
 * Maximum multiplier value (0.001 - 1000)
 * Minimum multiplier value (0.001 - 1000)
 * Print updates on completion
+* Optional setting of all science costs to a fixed value
