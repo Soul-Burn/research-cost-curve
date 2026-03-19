@@ -39,4 +39,12 @@ data:extend {
         default_value = true,
         order = "c",
     },
+    {
+        type = "int-setting",
+        name = "rcc-fixed-cost",
+        setting_type = "startup",
+        default_value = 0,
+        minimum_value = 0,
+        order = "d",
+    },
 }

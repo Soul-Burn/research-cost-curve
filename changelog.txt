@@ -2,6 +2,7 @@
 Version: 0.1.2
 Date: ????
   Changes:
+    - Added support for fixed initial science cost
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2025-05-16
