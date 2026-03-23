@@ -12,11 +12,8 @@ end
 if ignore_infinite then
     for _, technology in pairs(data.raw.technology) do
         if technology.unit and technology.unit.count == nil then
-            log(serpent.block(technology))
-
             technology.ignore_tech_cost_multiplier = true
         end
-
     end
 
 end
