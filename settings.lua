@@ -47,4 +47,11 @@ data:extend {
         minimum_value = 0,
         order = "d",
     },
+    {
+        type = "bool-setting",
+        name = "rcc-ignore-infinite",
+        setting_type = "startup",
+        default_value = false,
+        order = "e",
+    },
 }
