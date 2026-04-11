@@ -2,6 +2,7 @@
 Version: 0.1.3
 Date: ????
   Changes:
+    - Support suppression of prints beyond certain significant digits.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 2026-03-19

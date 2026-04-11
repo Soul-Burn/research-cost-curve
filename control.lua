@@ -1,3 +1,19 @@
+local function similar(n1, n2, precision)
+    local s1 = string.format("%.10f", n1)
+    local s2 = string.format("%.10f", n2)
+
+    local decimal_index = s1:find("%.")
+    if decimal_index ~= s2:find("%.") then
+        return false
+    end
+
+    if decimal_index <= precision then
+        precision = precision + 1
+    end
+
+    return s1:sub(1, precision) == s2:sub(1, precision)
+end
+
 local function apply_change(iterate)
     local old = game.difficulty_settings.technology_price_multiplier
     local new = old
@@ -19,7 +35,9 @@ local function apply_change(iterate)
         if new == min then
             suffix = " = minimum"
         end
-        game.print("Research price multiplier updated: (" .. old .. " + " .. add .. ") * " .. mult .. " =  " .. new .. "x" .. suffix)
+        if not similar(old, new, settings.global["rcc-print-precision"].value) then
+            game.print("Research price multiplier updated: (" .. old .. " + " .. add .. ") * " .. mult .. " =  " .. new .. "x" .. suffix)
+        end
     end
 end
 

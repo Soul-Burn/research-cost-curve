@@ -41,10 +41,18 @@ data:extend {
     },
     {
         type = "int-setting",
+        name = "rcc-print-precision",
+        setting_type = "runtime-global",
+        default_value = 1000,
+        minimum_value = 1,
+        order = "d",
+    },
+    {
+        type = "int-setting",
         name = "rcc-fixed-cost",
         setting_type = "startup",
         default_value = 0,
         minimum_value = 0,
-        order = "d",
+        order = "z",
     },
 }
